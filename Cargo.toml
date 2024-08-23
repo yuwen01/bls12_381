@@ -69,7 +69,8 @@ default-features = false
 optional = true
 
 
-[target.'cfg(target_os = "zkvm")'.dependencies]
+# [target.'cfg(target_os = "zkvm")'.dependencies]
+[dependencies]
 sp1-lib = { git = "https://github.com/succinctlabs/sp1", branch = "dev", default-features = false }
 
 
