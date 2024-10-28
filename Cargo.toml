@@ -68,6 +68,12 @@ version = "1.4"
 default-features = false
 optional = true
 
+[dependencies.hex]
+version = "0.4"
+default-features = false
+features = ["alloc"]
+optional = true
+
 
 [target.'cfg(target_os = "zkvm")'.dependencies.sp1-lib]
 version = "3.0.0"
@@ -80,5 +86,5 @@ bits = ["ff/bits"]
 groups = ["group"]
 pairings = ["groups", "pairing"]
 alloc = ["group/alloc"]
-experimental = ["digest"]
+experimental = ["digest", "hex"]
 nightly = ["subtle/nightly"]

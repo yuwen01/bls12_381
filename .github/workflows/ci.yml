@@ -42,7 +42,7 @@ jobs:
           --verbose
           --target ${{ matrix.target }}
           --no-default-features
-          --features groups,pairings
+          --features groups,pairings,alloc
 
   bitrot:
     name: Bitrot check
